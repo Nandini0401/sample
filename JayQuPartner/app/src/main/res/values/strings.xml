@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JayQu Partner</string>
+    <string-array name="names">
+        <item>Food</item>
+        <item>Grocery</item>
+        <item>Medical</item>
+    </string-array>
+</resources>

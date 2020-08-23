@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "577000656571",
+    "firebase_url": "https://jayqu-services.firebaseio.com",
+    "project_id": "jayqu-services",
+    "storage_bucket": "jayqu-services.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577000656571:android:127724d2811e65cb84a39e",
+        "android_client_info": {
+          "package_name": "com.jayqu.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577000656571-g9p207ko26d3bquq9utr62nie26s9v03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsS1obdj2ViGWjp_q0Reei3ZOzQuYsO_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577000656571-g9p207ko26d3bquq9utr62nie26s9v03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
