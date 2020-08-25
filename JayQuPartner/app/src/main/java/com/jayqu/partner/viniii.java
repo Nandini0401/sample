@@ -71,7 +71,7 @@ public class viniii extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Log.i("abc", "onSuccess: ");
-                        startActivity(new Intent(viniii.this, RegisterActivity.class));
+                        startActivity(new Intent(viniii.this, HomeActivity.class));
                     }
                 });
 

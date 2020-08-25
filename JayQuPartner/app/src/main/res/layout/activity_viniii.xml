@@ -7,6 +7,21 @@
     tools:context="com.jayqu.partner.viniii">
 
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColorLink="#171515"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+
         <EditText
             android:id="@+id/name"
             android:layout_width="0dp"
@@ -82,23 +97,22 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="376dp"
+            android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginLeft="23dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="18dp"
+
+
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="98dp"
             android:background="#C1BFBF"
             android:dropDownSelector="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/save"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/itavailability"
-            app:layout_constraintVertical_bias="0.345"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.333"/>
 
         <Button
             android:id="@+id/button"
@@ -113,6 +127,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/itavailability"
             app:layout_constraintVertical_bias="0.333" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
