@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".CatgActivity"/>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".completed_nav_bar" />
+        <activity android:name=".pending_nav_bar" />
+        <activity android:name=".history_nav_bar" />
+        <activity android:name=".NewRequest" />
         <activity android:name=".Navigation" />
         <activity android:name=".upload" />
         <activity android:name=".ItemActivity" />

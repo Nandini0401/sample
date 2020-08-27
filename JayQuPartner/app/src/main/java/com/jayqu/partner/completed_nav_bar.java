@@ -41,6 +41,10 @@ public class completed_nav_bar extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                         overridePendingTransition(0,0);
                         return true;
+                    case R.id.nav_new:
+                        startActivity(new Intent(getApplicationContext(),NewRequest.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
 
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();

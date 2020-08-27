@@ -41,6 +41,10 @@ public class pending_nav_bar extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),completed_nav_bar.class));
                         overridePendingTransition(0,0);
                         return true;
+                    case R.id.nav_new:
+                        startActivity(new Intent(getApplicationContext(),NewRequest.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return false;
             }

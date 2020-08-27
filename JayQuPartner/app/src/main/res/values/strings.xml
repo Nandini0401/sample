@@ -1,8 +1,28 @@
 <resources>
     <string name="app_name">JayQu Partner</string>
     <string-array name="names">
+        <item>Choose Category</item>
         <item>Food</item>
         <item>Grocery</item>
         <item>Medical</item>
     </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Categories">Categories</string>
+    <string name="Tablets">Tablets</string>
+    <string name="Syrups">Syrups</string>
+    <string name="categories">Categories</string>
+    <string name="tablets">tablets</string>
+    <string name="syrups">Syrups</string>
+    <string name="beauty_products">Beauty Products</string>
+    <string name="general_products">General Products</string>
+    <string name="add_category">Add Category</string>
+    <string name="view_items">View Items</string>
+    <string name="home">Home</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="logout">Logout</string>
+    <string name="register_complain">Register Complain</string>
+    <string name="choose_category" />
+
+
 </resources>

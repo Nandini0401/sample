@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_nav_bar_home"
-        android:title="Home"
+        android:id="@+id/nav_new"
+        android:icon="@drawable/ic_baseline_fiber_new_24"
+        android:title="New Request"
         app:showAsAction="ifRoom"/>
 
     <item
@@ -14,6 +14,11 @@
         android:title="Ongoing"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_bar_home"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/nav_completed"
         android:icon="@drawable/ic_baseline_check_24"

@@ -1,33 +1,93 @@
 package com.jayqu.partner;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity {
-    private Button Item;
+     Button category1;
+     DrawerLayout mNavDrawer;
 
 
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.drawer_nav_layout);
 
-       Item = findViewById(R.id.Add_Item);
-       Item.setOnClickListener(new View.OnClickListener() {
+         Toolbar toolbar = findViewById(R.id.toolbar);
+         setSupportActionBar(toolbar);
+
+         mNavDrawer = findViewById(R.id.drawer_layout);
+         NavigationView navigationView = findViewById(R.id.navigation_view);
+
+
+         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                 this, mNavDrawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+         );
+         mNavDrawer.addDrawerListener(toggle);
+
+         toggle.syncState();
+         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
+         {
+             @Override
+             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                 switch (item.getItemId()) {
+                     case R.id.navi_home:
+                         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                         overridePendingTransition(0, 0);
+                         return true;
+                     case R.id.navi_item:
+                         startActivity(new Intent(getApplicationContext(), viewitem.class));
+                         overridePendingTransition(0, 0);
+                         return true;
+                     case R.id.navi_payment:
+                         startActivity(new Intent(getApplicationContext(), paymentrequest.class));
+                         overridePendingTransition(0, 0);
+                         return true;
+                     case R.id.navi_logout:
+                       startActivity(new Intent(getApplicationContext(), logout.class));
+                         overridePendingTransition(0, 0);
+                         return true;
+                   
+                 }
+
+
+                 return false;
+             }
+         });
+
+
+
+       category1 = (Button) findViewById(R.id.addCategoryBtn);
+       category1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent intent = new Intent(HomeActivity.this,ItemActivity.class);
-               startActivity(intent);
+
+
+               try {
+                   startActivity(new Intent(HomeActivity.this, CatgActivity.class));
+               }
+               catch (Exception e)
+               {
+                   Toast.makeText(getApplicationContext(), ""+e.getMessage(), Toast.LENGTH_LONG).show();
+               }
+               /*Intent intent = new Intent(HomeActivity.this, CatgActivity.class);
+               startActivity(intent);*/
            }
        });
+
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -53,6 +113,10 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_completed:
                         startActivity(new Intent(getApplicationContext(), completed_nav_bar.class));
                         overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.nav_new:
+                        startActivity(new Intent(getApplicationContext(),NewRequest.class));
+                        overridePendingTransition(0,0);
                         return true;
                 }
 

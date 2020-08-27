@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navi_home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_nav_bar_home"/>
+        <item
+            android:id="@+id/navi_item"
+            android:title="@string/view_items"
+            android:icon="@drawable/ic_baseline_pageview_24"/>
+        <item
+            android:id="@+id/navi_payment"
+            android:title="@string/payment_request"
+            android:icon="@drawable/ic_baseline_payment_24"/>
+
+        <item
+            android:id="@+id/navi_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+        <item
+            android:id="@+id/navi_complaint"
+            android:title="@string/register_complain"
+            android:icon="@drawable/ic_baseline_question_answer_24"/>
+
+
+    </group>
+
+
+</menu>
